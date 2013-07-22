@@ -1,0 +1,466 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9BA91CDE179CE93800EDB3C7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BA91CDD179CE93800EDB3C7 /* UIKit.framework */; };
+		9BA91CE0179CE93800EDB3C7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BA91CDF179CE93800EDB3C7 /* Foundation.framework */; };
+		9BA91CE2179CE93800EDB3C7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BA91CE1179CE93800EDB3C7 /* CoreGraphics.framework */; };
+		9BA91CE8179CE93800EDB3C7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9BA91CE6179CE93800EDB3C7 /* InfoPlist.strings */; };
+		9BA91CEA179CE93900EDB3C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BA91CE9179CE93800EDB3C7 /* main.m */; };
+		9BA91CEE179CE93900EDB3C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BA91CED179CE93900EDB3C7 /* AppDelegate.m */; };
+		9BA91CF0179CE93900EDB3C7 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 9BA91CEF179CE93900EDB3C7 /* Default.png */; };
+		9BA91CF2179CE93900EDB3C7 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9BA91CF1179CE93900EDB3C7 /* Default@2x.png */; };
+		9BA91CF4179CE93900EDB3C7 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9BA91CF3179CE93900EDB3C7 /* Default-568h@2x.png */; };
+		9BA91CF7179CE93900EDB3C7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BA91CF6179CE93900EDB3C7 /* ViewController.m */; };
+		9BA91CFA179CE93900EDB3C7 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9BA91CF8179CE93900EDB3C7 /* ViewController.xib */; };
+		9BA91D02179CE93900EDB3C7 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BA91D01179CE93900EDB3C7 /* SenTestingKit.framework */; };
+		9BA91D03179CE93900EDB3C7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BA91CDD179CE93800EDB3C7 /* UIKit.framework */; };
+		9BA91D04179CE93900EDB3C7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BA91CDF179CE93800EDB3C7 /* Foundation.framework */; };
+		9BA91D0C179CE93900EDB3C7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9BA91D0A179CE93900EDB3C7 /* InfoPlist.strings */; };
+		9BA91D0F179CE93900EDB3C7 /* AVCaptureDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BA91D0E179CE93900EDB3C7 /* AVCaptureDemoTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9BA91D05179CE93900EDB3C7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9BA91CD2179CE93800EDB3C7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9BA91CD9179CE93800EDB3C7;
+			remoteInfo = AVCaptureDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9BA91CDA179CE93800EDB3C7 /* AVCaptureDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AVCaptureDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9BA91CDD179CE93800EDB3C7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		9BA91CDF179CE93800EDB3C7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		9BA91CE1179CE93800EDB3C7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		9BA91CE5179CE93800EDB3C7 /* AVCaptureDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AVCaptureDemo-Info.plist"; sourceTree = "<group>"; };
+		9BA91CE7179CE93800EDB3C7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9BA91CE9179CE93800EDB3C7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9BA91CEB179CE93900EDB3C7 /* AVCaptureDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AVCaptureDemo-Prefix.pch"; sourceTree = "<group>"; };
+		9BA91CEC179CE93900EDB3C7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		9BA91CED179CE93900EDB3C7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		9BA91CEF179CE93900EDB3C7 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		9BA91CF1179CE93900EDB3C7 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		9BA91CF3179CE93900EDB3C7 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		9BA91CF5179CE93900EDB3C7 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		9BA91CF6179CE93900EDB3C7 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		9BA91CF9179CE93900EDB3C7 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		9BA91D00179CE93900EDB3C7 /* AVCaptureDemoTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AVCaptureDemoTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9BA91D01179CE93900EDB3C7 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		9BA91D09179CE93900EDB3C7 /* AVCaptureDemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AVCaptureDemoTests-Info.plist"; sourceTree = "<group>"; };
+		9BA91D0B179CE93900EDB3C7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9BA91D0D179CE93900EDB3C7 /* AVCaptureDemoTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AVCaptureDemoTests.h; sourceTree = "<group>"; };
+		9BA91D0E179CE93900EDB3C7 /* AVCaptureDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AVCaptureDemoTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9BA91CD7179CE93800EDB3C7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9BA91CDE179CE93800EDB3C7 /* UIKit.framework in Frameworks */,
+				9BA91CE0179CE93800EDB3C7 /* Foundation.framework in Frameworks */,
+				9BA91CE2179CE93800EDB3C7 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9BA91CFC179CE93900EDB3C7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9BA91D02179CE93900EDB3C7 /* SenTestingKit.framework in Frameworks */,
+				9BA91D03179CE93900EDB3C7 /* UIKit.framework in Frameworks */,
+				9BA91D04179CE93900EDB3C7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9BA91CD1179CE93800EDB3C7 = {
+			isa = PBXGroup;
+			children = (
+				9BA91CE3179CE93800EDB3C7 /* AVCaptureDemo */,
+				9BA91D07179CE93900EDB3C7 /* AVCaptureDemoTests */,
+				9BA91CDC179CE93800EDB3C7 /* Frameworks */,
+				9BA91CDB179CE93800EDB3C7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9BA91CDB179CE93800EDB3C7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9BA91CDA179CE93800EDB3C7 /* AVCaptureDemo.app */,
+				9BA91D00179CE93900EDB3C7 /* AVCaptureDemoTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9BA91CDC179CE93800EDB3C7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9BA91CDD179CE93800EDB3C7 /* UIKit.framework */,
+				9BA91CDF179CE93800EDB3C7 /* Foundation.framework */,
+				9BA91CE1179CE93800EDB3C7 /* CoreGraphics.framework */,
+				9BA91D01179CE93900EDB3C7 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9BA91CE3179CE93800EDB3C7 /* AVCaptureDemo */ = {
+			isa = PBXGroup;
+			children = (
+				9BA91CEC179CE93900EDB3C7 /* AppDelegate.h */,
+				9BA91CED179CE93900EDB3C7 /* AppDelegate.m */,
+				9BA91CF5179CE93900EDB3C7 /* ViewController.h */,
+				9BA91CF6179CE93900EDB3C7 /* ViewController.m */,
+				9BA91CF8179CE93900EDB3C7 /* ViewController.xib */,
+				9BA91CE4179CE93800EDB3C7 /* Supporting Files */,
+			);
+			path = AVCaptureDemo;
+			sourceTree = "<group>";
+		};
+		9BA91CE4179CE93800EDB3C7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9BA91CE5179CE93800EDB3C7 /* AVCaptureDemo-Info.plist */,
+				9BA91CE6179CE93800EDB3C7 /* InfoPlist.strings */,
+				9BA91CE9179CE93800EDB3C7 /* main.m */,
+				9BA91CEB179CE93900EDB3C7 /* AVCaptureDemo-Prefix.pch */,
+				9BA91CEF179CE93900EDB3C7 /* Default.png */,
+				9BA91CF1179CE93900EDB3C7 /* Default@2x.png */,
+				9BA91CF3179CE93900EDB3C7 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9BA91D07179CE93900EDB3C7 /* AVCaptureDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				9BA91D0D179CE93900EDB3C7 /* AVCaptureDemoTests.h */,
+				9BA91D0E179CE93900EDB3C7 /* AVCaptureDemoTests.m */,
+				9BA91D08179CE93900EDB3C7 /* Supporting Files */,
+			);
+			path = AVCaptureDemoTests;
+			sourceTree = "<group>";
+		};
+		9BA91D08179CE93900EDB3C7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9BA91D09179CE93900EDB3C7 /* AVCaptureDemoTests-Info.plist */,
+				9BA91D0A179CE93900EDB3C7 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9BA91CD9179CE93800EDB3C7 /* AVCaptureDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9BA91D12179CE93900EDB3C7 /* Build configuration list for PBXNativeTarget "AVCaptureDemo" */;
+			buildPhases = (
+				9BA91CD6179CE93800EDB3C7 /* Sources */,
+				9BA91CD7179CE93800EDB3C7 /* Frameworks */,
+				9BA91CD8179CE93800EDB3C7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AVCaptureDemo;
+			productName = AVCaptureDemo;
+			productReference = 9BA91CDA179CE93800EDB3C7 /* AVCaptureDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9BA91CFF179CE93900EDB3C7 /* AVCaptureDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9BA91D15179CE93900EDB3C7 /* Build configuration list for PBXNativeTarget "AVCaptureDemoTests" */;
+			buildPhases = (
+				9BA91CFB179CE93900EDB3C7 /* Sources */,
+				9BA91CFC179CE93900EDB3C7 /* Frameworks */,
+				9BA91CFD179CE93900EDB3C7 /* Resources */,
+				9BA91CFE179CE93900EDB3C7 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9BA91D06179CE93900EDB3C7 /* PBXTargetDependency */,
+			);
+			name = AVCaptureDemoTests;
+			productName = AVCaptureDemoTests;
+			productReference = 9BA91D00179CE93900EDB3C7 /* AVCaptureDemoTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9BA91CD2179CE93800EDB3C7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Eason Wang";
+			};
+			buildConfigurationList = 9BA91CD5179CE93800EDB3C7 /* Build configuration list for PBXProject "AVCaptureDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 9BA91CD1179CE93800EDB3C7;
+			productRefGroup = 9BA91CDB179CE93800EDB3C7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9BA91CD9179CE93800EDB3C7 /* AVCaptureDemo */,
+				9BA91CFF179CE93900EDB3C7 /* AVCaptureDemoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9BA91CD8179CE93800EDB3C7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9BA91CE8179CE93800EDB3C7 /* InfoPlist.strings in Resources */,
+				9BA91CF0179CE93900EDB3C7 /* Default.png in Resources */,
+				9BA91CF2179CE93900EDB3C7 /* Default@2x.png in Resources */,
+				9BA91CF4179CE93900EDB3C7 /* Default-568h@2x.png in Resources */,
+				9BA91CFA179CE93900EDB3C7 /* ViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9BA91CFD179CE93900EDB3C7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9BA91D0C179CE93900EDB3C7 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9BA91CFE179CE93900EDB3C7 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9BA91CD6179CE93800EDB3C7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9BA91CEA179CE93900EDB3C7 /* main.m in Sources */,
+				9BA91CEE179CE93900EDB3C7 /* AppDelegate.m in Sources */,
+				9BA91CF7179CE93900EDB3C7 /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9BA91CFB179CE93900EDB3C7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9BA91D0F179CE93900EDB3C7 /* AVCaptureDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9BA91D06179CE93900EDB3C7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9BA91CD9179CE93800EDB3C7 /* AVCaptureDemo */;
+			targetProxy = 9BA91D05179CE93900EDB3C7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9BA91CE6179CE93800EDB3C7 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9BA91CE7179CE93800EDB3C7 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		9BA91CF8179CE93900EDB3C7 /* ViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9BA91CF9179CE93900EDB3C7 /* en */,
+			);
+			name = ViewController.xib;
+			sourceTree = "<group>";
+		};
+		9BA91D0A179CE93900EDB3C7 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9BA91D0B179CE93900EDB3C7 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9BA91D10179CE93900EDB3C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		9BA91D11179CE93900EDB3C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9BA91D13179CE93900EDB3C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AVCaptureDemo/AVCaptureDemo-Prefix.pch";
+				INFOPLIST_FILE = "AVCaptureDemo/AVCaptureDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		9BA91D14179CE93900EDB3C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AVCaptureDemo/AVCaptureDemo-Prefix.pch";
+				INFOPLIST_FILE = "AVCaptureDemo/AVCaptureDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		9BA91D16179CE93900EDB3C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/AVCaptureDemo.app/AVCaptureDemo";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AVCaptureDemo/AVCaptureDemo-Prefix.pch";
+				INFOPLIST_FILE = "AVCaptureDemoTests/AVCaptureDemoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		9BA91D17179CE93900EDB3C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/AVCaptureDemo.app/AVCaptureDemo";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AVCaptureDemo/AVCaptureDemo-Prefix.pch";
+				INFOPLIST_FILE = "AVCaptureDemoTests/AVCaptureDemoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9BA91CD5179CE93800EDB3C7 /* Build configuration list for PBXProject "AVCaptureDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9BA91D10179CE93900EDB3C7 /* Debug */,
+				9BA91D11179CE93900EDB3C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9BA91D12179CE93900EDB3C7 /* Build configuration list for PBXNativeTarget "AVCaptureDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9BA91D13179CE93900EDB3C7 /* Debug */,
+				9BA91D14179CE93900EDB3C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		9BA91D15179CE93900EDB3C7 /* Build configuration list for PBXNativeTarget "AVCaptureDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9BA91D16179CE93900EDB3C7 /* Debug */,
+				9BA91D17179CE93900EDB3C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9BA91CD2179CE93800EDB3C7 /* Project object */;
+}
