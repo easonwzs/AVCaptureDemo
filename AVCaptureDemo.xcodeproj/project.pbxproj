@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9B0B173F179E72D8000A5A96 /* encoder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9B0B173D179E72D8000A5A96 /* encoder.cpp */; };
+		9B0B1745179E73CC000A5A96 /* PPUtil.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9B0B1744179E73CC000A5A96 /* PPUtil.mm */; };
 		9BA91CDE179CE93800EDB3C7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BA91CDD179CE93800EDB3C7 /* UIKit.framework */; };
 		9BA91CE0179CE93800EDB3C7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BA91CDF179CE93800EDB3C7 /* Foundation.framework */; };
 		9BA91CE2179CE93800EDB3C7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BA91CE1179CE93800EDB3C7 /* CoreGraphics.framework */; };
@@ -16,13 +18,18 @@
 		9BA91CF0179CE93900EDB3C7 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 9BA91CEF179CE93900EDB3C7 /* Default.png */; };
 		9BA91CF2179CE93900EDB3C7 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9BA91CF1179CE93900EDB3C7 /* Default@2x.png */; };
 		9BA91CF4179CE93900EDB3C7 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9BA91CF3179CE93900EDB3C7 /* Default-568h@2x.png */; };
-		9BA91CF7179CE93900EDB3C7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BA91CF6179CE93900EDB3C7 /* ViewController.m */; };
+		9BA91CF7179CE93900EDB3C7 /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9BA91CF6179CE93900EDB3C7 /* ViewController.mm */; };
 		9BA91CFA179CE93900EDB3C7 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9BA91CF8179CE93900EDB3C7 /* ViewController.xib */; };
 		9BA91D02179CE93900EDB3C7 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BA91D01179CE93900EDB3C7 /* SenTestingKit.framework */; };
 		9BA91D03179CE93900EDB3C7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BA91CDD179CE93800EDB3C7 /* UIKit.framework */; };
 		9BA91D04179CE93900EDB3C7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BA91CDF179CE93800EDB3C7 /* Foundation.framework */; };
 		9BA91D0C179CE93900EDB3C7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9BA91D0A179CE93900EDB3C7 /* InfoPlist.strings */; };
 		9BA91D0F179CE93900EDB3C7 /* AVCaptureDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BA91D0E179CE93900EDB3C7 /* AVCaptureDemoTests.m */; };
+		9BA91D19179D266800EDB3C7 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BA91D18179D266800EDB3C7 /* AVFoundation.framework */; };
+		9BA91D1D179D269B00EDB3C7 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BA91D1C179D269B00EDB3C7 /* CoreVideo.framework */; };
+		9BA91D21179D275D00EDB3C7 /* QServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BA91D20179D275D00EDB3C7 /* QServer.m */; };
+		9BA91D23179D276700EDB3C7 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BA91D22179D276700EDB3C7 /* CFNetwork.framework */; };
+		9BA91D6E179D2FA700EDB3C7 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BA91D6D179D2FA700EDB3C7 /* CoreMedia.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +43,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9B0B173D179E72D8000A5A96 /* encoder.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = encoder.cpp; sourceTree = "<group>"; };
+		9B0B173E179E72D8000A5A96 /* encoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = encoder.h; sourceTree = "<group>"; };
+		9B0B1743179E73CC000A5A96 /* PPUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPUtil.h; sourceTree = "<group>"; };
+		9B0B1744179E73CC000A5A96 /* PPUtil.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = PPUtil.mm; sourceTree = "<group>"; };
 		9BA91CDA179CE93800EDB3C7 /* AVCaptureDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AVCaptureDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BA91CDD179CE93800EDB3C7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		9BA91CDF179CE93800EDB3C7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -50,7 +61,7 @@
 		9BA91CF1179CE93900EDB3C7 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		9BA91CF3179CE93900EDB3C7 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		9BA91CF5179CE93900EDB3C7 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		9BA91CF6179CE93900EDB3C7 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		9BA91CF6179CE93900EDB3C7 /* ViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ViewController.mm; sourceTree = "<group>"; };
 		9BA91CF9179CE93900EDB3C7 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
 		9BA91D00179CE93900EDB3C7 /* AVCaptureDemoTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AVCaptureDemoTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BA91D01179CE93900EDB3C7 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
@@ -58,6 +69,12 @@
 		9BA91D0B179CE93900EDB3C7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		9BA91D0D179CE93900EDB3C7 /* AVCaptureDemoTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AVCaptureDemoTests.h; sourceTree = "<group>"; };
 		9BA91D0E179CE93900EDB3C7 /* AVCaptureDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AVCaptureDemoTests.m; sourceTree = "<group>"; };
+		9BA91D18179D266800EDB3C7 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		9BA91D1C179D269B00EDB3C7 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		9BA91D1F179D275D00EDB3C7 /* QServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QServer.h; sourceTree = "<group>"; };
+		9BA91D20179D275D00EDB3C7 /* QServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QServer.m; sourceTree = "<group>"; };
+		9BA91D22179D276700EDB3C7 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		9BA91D6D179D2FA700EDB3C7 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +82,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9BA91D6E179D2FA700EDB3C7 /* CoreMedia.framework in Frameworks */,
+				9BA91D23179D276700EDB3C7 /* CFNetwork.framework in Frameworks */,
+				9BA91D1D179D269B00EDB3C7 /* CoreVideo.framework in Frameworks */,
+				9BA91D19179D266800EDB3C7 /* AVFoundation.framework in Frameworks */,
 				9BA91CDE179CE93800EDB3C7 /* UIKit.framework in Frameworks */,
 				9BA91CE0179CE93800EDB3C7 /* Foundation.framework in Frameworks */,
 				9BA91CE2179CE93800EDB3C7 /* CoreGraphics.framework in Frameworks */,
@@ -84,6 +105,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9B0B173C179E72B9000A5A96 /* covert */ = {
+			isa = PBXGroup;
+			children = (
+				9B0B173D179E72D8000A5A96 /* encoder.cpp */,
+				9B0B173E179E72D8000A5A96 /* encoder.h */,
+				9B0B1743179E73CC000A5A96 /* PPUtil.h */,
+				9B0B1744179E73CC000A5A96 /* PPUtil.mm */,
+			);
+			name = covert;
+			sourceTree = "<group>";
+		};
 		9BA91CD1179CE93800EDB3C7 = {
 			isa = PBXGroup;
 			children = (
@@ -106,6 +138,10 @@
 		9BA91CDC179CE93800EDB3C7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9BA91D6D179D2FA700EDB3C7 /* CoreMedia.framework */,
+				9BA91D22179D276700EDB3C7 /* CFNetwork.framework */,
+				9BA91D1C179D269B00EDB3C7 /* CoreVideo.framework */,
+				9BA91D18179D266800EDB3C7 /* AVFoundation.framework */,
 				9BA91CDD179CE93800EDB3C7 /* UIKit.framework */,
 				9BA91CDF179CE93800EDB3C7 /* Foundation.framework */,
 				9BA91CE1179CE93800EDB3C7 /* CoreGraphics.framework */,
@@ -117,10 +153,12 @@
 		9BA91CE3179CE93800EDB3C7 /* AVCaptureDemo */ = {
 			isa = PBXGroup;
 			children = (
+				9B0B173C179E72B9000A5A96 /* covert */,
+				9BA91D1E179D275D00EDB3C7 /* Networking */,
 				9BA91CEC179CE93900EDB3C7 /* AppDelegate.h */,
 				9BA91CED179CE93900EDB3C7 /* AppDelegate.m */,
 				9BA91CF5179CE93900EDB3C7 /* ViewController.h */,
-				9BA91CF6179CE93900EDB3C7 /* ViewController.m */,
+				9BA91CF6179CE93900EDB3C7 /* ViewController.mm */,
 				9BA91CF8179CE93900EDB3C7 /* ViewController.xib */,
 				9BA91CE4179CE93800EDB3C7 /* Supporting Files */,
 			);
@@ -158,6 +196,15 @@
 				9BA91D0A179CE93900EDB3C7 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9BA91D1E179D275D00EDB3C7 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				9BA91D1F179D275D00EDB3C7 /* QServer.h */,
+				9BA91D20179D275D00EDB3C7 /* QServer.m */,
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -272,7 +319,10 @@
 			files = (
 				9BA91CEA179CE93900EDB3C7 /* main.m in Sources */,
 				9BA91CEE179CE93900EDB3C7 /* AppDelegate.m in Sources */,
-				9BA91CF7179CE93900EDB3C7 /* ViewController.m in Sources */,
+				9BA91CF7179CE93900EDB3C7 /* ViewController.mm in Sources */,
+				9BA91D21179D275D00EDB3C7 /* QServer.m in Sources */,
+				9B0B173F179E72D8000A5A96 /* encoder.cpp in Sources */,
+				9B0B1745179E73CC000A5A96 /* PPUtil.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,6 +378,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = NO;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
@@ -358,6 +409,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = NO;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
@@ -379,6 +431,7 @@
 		9BA91D13179CE93900EDB3C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AVCaptureDemo/AVCaptureDemo-Prefix.pch";
 				INFOPLIST_FILE = "AVCaptureDemo/AVCaptureDemo-Info.plist";
@@ -390,6 +443,7 @@
 		9BA91D14179CE93900EDB3C7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AVCaptureDemo/AVCaptureDemo-Prefix.pch";
 				INFOPLIST_FILE = "AVCaptureDemo/AVCaptureDemo-Info.plist";
@@ -451,6 +505,7 @@
 				9BA91D14179CE93900EDB3C7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9BA91D15179CE93900EDB3C7 /* Build configuration list for PBXNativeTarget "AVCaptureDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -459,6 +514,7 @@
 				9BA91D17179CE93900EDB3C7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
