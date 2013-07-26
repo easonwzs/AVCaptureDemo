@@ -16,33 +16,18 @@ CEncoder::CEncoder(){
 
 }
 
-void CEncoder::UintToData(int length,std::vector<unsigned char> &data)
+void CEncoder::UintToData(unsigned int length,std::vector<unsigned char> &data)
 {
   unsigned char first[INT_SIZE_32];
-  unsigned char second[INT_SIZE_32];
+
   memset(first, 0, INT_SIZE_32);
-  memset(second, 0, INT_SIZE_32);
-  
+
   memcpy(first, &length, INT_SIZE_32);
- 
-  ChangeOrder(4, first);
+  
+  int len = (((first[0]<<24)&0xff000000) + ((first[1]<<16)&0xff0000) + ((first[2]<<8)&0xff00) + (first[3]&0xff));
+  memset(first, 0, INT_SIZE_32);
+  memcpy(first,&len,INT_SIZE_32);
   
   data.insert(data.begin(), first, first +INT_SIZE_32);
-  
-}
-void CEncoder::ChangeOrder( int loop,unsigned char *change)
-{
-  unsigned char first[INT_SIZE_32];
-  memset(first, 0, INT_SIZE_32);
-  
-  memcpy(first, change, INT_SIZE_32);
-  
-  while (loop>0) {
-    loop --;
-    *change = first[loop];
-    if (loop != 0) {
-      change ++;
-    }
-  }
   
 }

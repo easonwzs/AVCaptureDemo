@@ -21,7 +21,6 @@ public:
   /*
    *将数据的长度转换为4字节
    */
-  void UintToData(int length,std::vector<unsigned char> &data);
-  void ChangeOrder( int loop,unsigned char *change);
-
+  void UintToData(unsigned int length,std::vector<unsigned char> &data);
+  
 };

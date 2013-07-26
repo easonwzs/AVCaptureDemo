@@ -13,5 +13,4 @@
 
 + (uint8_t *)dataPackage:(NSData *)data;
 
-
 @end

@@ -17,7 +17,12 @@
     NSStreamDelegate
 >
 {
+  UIImageView *_status;
+  UILabel *_theNews;
   UILabel *_deviceName;
+  UIButton *_startButton;
+  UIButton *_stopButton;
+  UISwitch *_DSwitch;
   
   //视频流
   UIView *_showView;
@@ -25,11 +30,11 @@
   UILabel *_device;
   AVCaptureDevice *_avCaptureDevice;
   AVCaptureSession *_avCaptureSession;
-  NSUInteger _bytesLen;
+//  NSUInteger _bytesLen;
   NSString *_name;
   NSData *_videoData;
-  NSUInteger _dataLen;
-  
+//  NSUInteger _dataLen;
+//  UIImageView *_imageView;
   
   //网络连接
   BOOL isFirstFourBytes;
@@ -43,9 +48,14 @@
   NSMutableData *_dataBuffer;
   int remainingToRead ;
 }
+@property (nonatomic, strong, readwrite) IBOutlet UIImageView *status;
+@property (nonatomic, strong, readwrite) IBOutlet UILabel *theNews;
 @property (nonatomic, strong, readwrite) IBOutlet UILabel *deviceName;
+@property (nonatomic, strong, readwrite) IBOutlet UIButton *startButton;
+@property (nonatomic, strong, readwrite) IBOutlet UIButton *stopButton;
+@property (nonatomic, strong, readwrite) IBOutlet UISwitch *DSwitch;
 
-@property (nonatomic, assign, readwrite) NSUInteger bytesLen;
+//@property (nonatomic, assign, readwrite) NSUInteger bytesLen;
 @property (nonatomic, strong, readwrite) AVCaptureSession *avCaptureSession;
 @property (nonatomic, strong, readwrite) AVCaptureDevice *avCaptureDevice;
 @property (nonatomic, strong, readwrite) IBOutlet UIView *showView;
@@ -53,7 +63,8 @@
 @property (nonatomic, strong, readwrite) IBOutlet UILabel *device;
 @property (nonatomic, strong, readwrite) NSString *name;
 @property (nonatomic, strong, readwrite) NSData *videoData;
-@property (nonatomic, assign, readwrite) NSUInteger dataLen;
+//@property (nonatomic, assign, readwrite) NSUInteger dataLen;
+//@property (nonatomic, strong, readwrite) UIImageView *imageView;
 
 @property (nonatomic, strong, readwrite) QServer *server;
 @property (nonatomic, strong, readwrite) NSMutableArray *services;
