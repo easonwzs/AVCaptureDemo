@@ -35,6 +35,7 @@ static NSString * kWiTapBonjourType = @"_witap2._udp.";
 @synthesize services = _services;
 @synthesize browser = _browser;
 //@synthesize bytesLen = _bytesLen;
+//s
 @synthesize name = _name;
 @synthesize videoData = _videoData;
 //@synthesize dataLen = _dataLen;
