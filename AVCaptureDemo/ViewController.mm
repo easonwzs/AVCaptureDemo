@@ -10,6 +10,7 @@
 #import "QServer.h"
 #import "PPUtil.h"
 #import <iostream>
+
 static NSString * domain = @"local.";
 static NSString * kWiTapBonjourType = @"_witap2._udp.";
 
@@ -50,7 +51,7 @@ static NSString * kWiTapBonjourType = @"_witap2._udp.";
 {
   [super viewDidLoad];
   
-  
+  self.theNews.text = @"等待连接...";
   self.services = [[NSMutableArray alloc]init];
   isFirstFourBytes = YES;
   // 初始化 startButton、stopButton 不可操作
@@ -176,11 +177,13 @@ static NSString * kWiTapBonjourType = @"_witap2._udp.";
   [self.showView.layer addSublayer:previewLayer];
   
   [self.avCaptureSession startRunning];
+  self.theNews.text = @"视频传输中...";
 }
 
 // 关闭视频设备
 - (IBAction)stopTransportData:(id)sender
 {
+  self.theNews.text = @"暂停传输。";
   [self redStatus];
   // 开启 switch 可操作
   [self.DSwitch setUserInteractionEnabled:YES];
@@ -259,6 +262,7 @@ static NSString * kWiTapBonjourType = @"_witap2._udp.";
 
 - (void)dataToImage:(NSMutableData *)data
 {
+  self.theNews.text = @"正在接收视频...";
   [self greenStatus];
   UIImage *img = [UIImage imageWithData:data];
   UIImageView *imageV = [[UIImageView alloc]initWithFrame:CGRectMake(0 , 0, 229, 282)];
@@ -277,6 +281,8 @@ static NSString * kWiTapBonjourType = @"_witap2._udp.";
 {
   [self startServer];
 }
+
+// 服务被联接后将调用此函数
 - (id)server:(QServer *)server connectionForInputStream:(NSInputStream *)inputStream outputStream:(NSOutputStream *)outputStream
 {
   id  result;
@@ -292,6 +298,12 @@ static NSString * kWiTapBonjourType = @"_witap2._udp.";
     
     result = nil;
   } else {
+    
+    self.theNews.text = @"此设备已被联接，等待视频传输...";
+    [self.DSwitch setOn:YES];
+    [self.DSwitch setUserInteractionEnabled:NO];
+    [self.startButton setUserInteractionEnabled:NO];
+    [self.stopButton setUserInteractionEnabled:NO];
     
     [self.server deregister];
     
@@ -337,6 +349,9 @@ static NSString * kWiTapBonjourType = @"_witap2._udp.";
   if (!success) {
     NSLog(@"打开 I/O 流失败");
   }else{
+    self.theNews.text = [NSString stringWithFormat:@"已联接到设备%@",service.name];
+    [self.DSwitch setUserInteractionEnabled:NO];
+    
     self.inputStream = inStream;
     self.outputStream = outStream;
     
@@ -418,7 +433,7 @@ static NSString * kWiTapBonjourType = @"_witap2._udp.";
         assert(aStream == self.inputStream);
         if ([self.inputStream read:bufferLen maxLength:4]==4) {
           [self redStatus];
-          //取得参数长度
+          //取得参数长度（4字节）
           remainingToRead = ((bufferLen[0]<<24)&0xff000000)+((bufferLen[1]<<16)&0xff0000)+((bufferLen[2]<<8)&0xff00)+(bufferLen[3] & 0xff);
           NSLog(@"总参数长度==%d",remainingToRead);
           isFirstFourBytes = NO;
@@ -444,6 +459,7 @@ static NSString * kWiTapBonjourType = @"_witap2._udp.";
           isFirstFourBytes = YES;
           self.dataBuffer = nil;
           [self redStatus];
+          self.theNews.text = @"采集端暂停视频传输。";
           break;
         }else{
           // 将得到的数据附加一起
@@ -456,6 +472,9 @@ static NSString * kWiTapBonjourType = @"_witap2._udp.";
           // 数据接受完毕，处理数据
           [self dataToImage:self.dataBuffer];
           self.dataBuffer = nil;
+        }
+        if (remainingToRead <0 || actuallyRead == 0) {
+          self.theNews.text = @"接收中断，请先暂停采集端再进行传输。";
         }
         
       }
@@ -481,6 +500,8 @@ static NSString * kWiTapBonjourType = @"_witap2._udp.";
   assert(aNetService != nil);
   
   if ((self.localService == nil) || ![self.localService isEqual:aNetService]) {
+    
+    self.theNews.text = @"发现设备接入网络...";
     self.deviceName.text = aNetService.name;
     [self.services addObject:aNetService];
   }
